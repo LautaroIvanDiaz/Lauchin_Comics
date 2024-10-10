@@ -1,0 +1,141 @@
+/*?------------INDEX--------------*/
+
+/*!SELECTOR UNIVERAL (se le aplica a todos los html con un asterisco "*"*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------HEADER---------*/
+
+.bg-menu {
+    background-color: black;
+}
+
+.btn-outline-success {
+    background-color: rgb(255, 49, 49) !important;
+    color: white !important;
+    border: white !important;
+}
+
+.btn-outline-success:hover {
+    background-color: white !important;
+    color: rgb(255, 49, 49) !important;
+    border: rgb(255, 49, 49) !important;
+}
+
+.nav-item a{
+    color: white !important;
+}
+
+.nav-item a:hover {
+    background-color: rgb(255, 49, 49) !important;
+}
+
+.navbar-toggler-icon{
+    color: white !important;
+}
+
+header nav div a img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*------MAIN----------*/
+
+/*----HERO SECTION----*/
+
+.d-md-block{
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+/*-----MAIN--------*/
+
+.popular h2 {
+    color: tomato;
+    text-align: center;
+    font-size: 50px;
+}
+
+.popular div img {
+    width: 200px;
+    height: 300px;
+}
+
+.popular div {
+    text-align: center;
+    margin: 10px;
+
+}
+
+.popular .imagenes_mangas div {
+    -webkit-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.29);
+}
+
+.popular .imagenes_mangas {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /*COLUMNAS*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+main section div h3 {
+    font-size: 15px;
+}
+
+/*------FOOTER--------*/
+
+footer div a img {
+    width: 50px;
+}
+
+.imagenes_redes {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer h2 {
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+}
+
+
+/*----TAMAÑOS PAGINA------*/
+
+@media screen and (max-width: 880px) {
+    header {
+        flex-direction: column;
+    }
+
+    .popular h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .popular .imagenes_mangas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .popular .imagenes_mangas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+}

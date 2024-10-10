@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>proyecto_coderhouse</title>
+
+    <!--¡¡¡IMPORTANTE!!!-->
+    <!--SOLO PUEDE HABER UN h1 POR DOCUMENTO-->
+    <!--SOLO SE LLEGA HASTA EL h6-->
+
+    <!--TIPOS DE LISTAS-->
+    <!--listas ordenadas : <ol> -->
+    <!--listas desordenadas : <ul>-->
+
+</head>
+
+<body>
+    <header> <!--encabezado"-->
+        <!--IMAGEN DE LA MARCA-->
+        <nav class="navbar navbar-expand-lg bg-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo_lauchin_comics.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./page/catalogo_completo.html">CATALOGO
+                                COMPLETO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/mangas.html">MANGAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/comics.html">COMICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/manhwas_webtoons.html">MANHWAS/WEBTOONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/novelas.html">NOVELAS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main> <!--"todo el contenido principal del documento"-->
+
+        <section> <!--"agrupacion de contenido (puede haber varias)"-->
+            <!--HERO SECTION-->
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/ashitanojoe_hero.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ASHITA NO JOE</h5>
+                            <p>Joe es un huérfano que pasa su vida como vagabundo en las calles hasta el día en el que encuentra a un viejo borracho llamado Danpei Tange, boxeador profesional retirado, que queda asombrado por la fuerza bruta de Joe al verlo en una pelea contra unos mafiosos y decide hacer de él un gran boxeador.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/haikyuu_hero.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>HAIKYUU</h5>
+                            <p>Cuando era niño, Shoyo Hinata ve un partido de voleibol por televisión, en donde pudo ver al "Pequeño Gigante". Desde entonces se enamora del deporte y sueña ser como su ídolo, ya que ambos son de estatura baja,</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/sololeveling_hero.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>SOLO LEVELING</h5>
+                            <p>En un mundo en el que ciertos humanos llamados "cazadores" poseen habilidades mágicas, estos deben luchar contra monstruos para proteger a la raza humana de una aniquilación segura. Un cazador muy débil llamado Sung Jinwoo se encuentra en una lucha en la que solo puede tratar de sobrevivir.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+        <section class="popular">
+
+            <h2>MÁS POPULARES</h2>
+
+            <div class="imagenes_mangas">
+                <div>
+                    <img src="./img/naruto_tomo.jpg" alt="">
+                    <h3>NARUTO</h3>
+                </div>
+                <div>
+                    <img src="./img/frieren_tomo.jpg" alt="">
+                    <h3>FRIEREN</h3>
+                </div>
+                <div>
+                    <img src="./img/dragonball_tomo.jpg" alt="">
+                    <h3>DRAGON BALL</h3>
+                </div>
+                <div>
+                    <img src="./img/kimetsu_tomo.jpg" alt="">
+                    <h3>KIMETSU NO YAIBA</h3>
+                </div>
+                <div>
+                    <img src="./img/csm_tomo.jpg" alt="">
+                    <h3>CHAINSAW-MAN</h3>
+                </div>
+                <div>
+                    <img src="./img/firepunch_tomo.jpg" alt="">
+                    <h3>FIRE PUNCH</h3>
+                </div>
+                <div>
+                    <img src="./img/ahirunosora_tomo.jpg" alt="">
+                    <h3>AHIRU NO SORA</h3>
+                </div>
+                <div>
+                    <img src="./img/vdevenganza_tomo.jpg" alt="">
+                    <h3>V DE VENGANZA</h3>
+                </div>
+                <div>
+                    <img src="./img/real_tomo.jpg" alt="">
+                    <h3>REAL</h3>
+                </div>
+                <div>
+                    <img src="./img/watchmen_tomo.jpg" alt="">
+                    <h3>WATCHMEN</h3>
+                </div>
+                <div>
+                    <img src="./img/spidermankraven_tomo.jpg" alt="">
+                    <h3>SPIDERMAN KRAVEN</h3>
+                </div>
+                <div>
+                    <img src="./img/theboxer_tomo.jpg" alt="">
+                    <h3>THE BOXER</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <!--"pie de pagina"-->
+        <div class="imagenes_redes">
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100008077124372&locale=es_LA" target="_blank"><img
+                        src="./img/facebook_logo.png" alt=""></a>
+                <a href="https://x.com/porquetendencia" target="_blank"><img src="./img/twitter_logo.png" alt=""></a>
+                <a href="https://www.instagram.com/lautaroivandiaz01/" target="_blank"><img
+                        src="./img/instagram_logo.png" alt=""></a>
+
+                <!-----Los links llevan a mi facebook e Instagram (que ni uso) y a una cuenta de twitter famosa-->
+            </div>
+        </div>
+
+        <h2>©LauchinComics S.L - Todos los derechos reservados</h2>
+
+    </footer>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
